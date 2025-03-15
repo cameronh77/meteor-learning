@@ -9,10 +9,16 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.20.7",
+    "@tailwindcss/postcss": "^4.0.14",
+    "@tailwindcss/vite": "^4.0.14",
+    "autoprefixer": "^10.4.21",
     "meteor-node-stubs": "^1.2.5",
     "mongodb": "^6.14.2",
+    "postcss": "^8.5.3",
+    "postcss-load-config": "^6.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.0.14"
   },
   "meteor": {
     "mainModule": {
