@@ -13,9 +13,15 @@ Meteor.methods({
         }
         return ContactsCollection.insertAsync({ name, email, imageUrl, createdAt: new Date() });
     },
+
     'contacts.remove'({ contactId}) {
         check(contactId, String);
         return ContactsCollection.removeAsync(contactId);
+    },
+
+    'contacts.archive'({ contactId}){
+        check(contactId, String);
+        ContactsCollection.updateAsync({_id: contactId}, { $set: { archived: true}});
     }
 })
 
